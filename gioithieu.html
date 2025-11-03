@@ -3,9 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Giới thiệu</title>
+</head>
+<body><!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khoa CNTT - Đại học Đại Nam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      background: #0066cc;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li:hover > a {
+      background: #004080;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background: #004080;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      padding: 0;
+      min-width: 150px;
+    }
+
+    .submenu li a {
+      padding: 10px;
+    }
+
+    nav ul li:hover .submenu {
+      display: block;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .intro img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .news {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .tin-card {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 30%;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .tin-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: white;
+      padding: 20px;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form input, form textarea, form button {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background: #0066cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      .news {
+        flex-direction: column;
+      }
+      .tin-card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>hếu</h1>
+  <header>
+    <h1>Khoa Công Nghệ Thông Tin - Đại học Đại Nam</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#trangchu">Trang chủ</a></li>
+      <li><a href="#gioithieu">Giới thiệu</a></li>
+      <li>
+        <a href="#">Đào tạo</a>
+        <ul class="submenu">
+          <li><a href="#">Đại học</a></li>
+          <li><a href="#">Thạc sĩ</a></li>
+          <li><a href="#">Ngắn hạn</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Sinh viên</a>
+        <ul class="submenu">
+          <li><a href="#">CLB</a></li>
+          <li><a href="#">Học bổng</a></li>
+          <li><a href="#">Việc làm</a></li>
+        </ul>
+      </li>
+      <li><a href="#tintuc">Tin tức</a></li>
+      <li><a href="#lienhe">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- TRANG CHỦ -->
+    <section id="trangchu" class="intro">
+      <img src="assets/images/banner.jpg" alt="Banner Khoa CNTT">
+      <h2>Chào mừng đến với Khoa CNTT - Đại học Đại Nam</h2>
+      <p>Khoa CNTT là nơi đào tạo nguồn nhân lực chất lượng cao trong lĩnh vực công nghệ thông tin, đáp ứng nhu cầu phát triển của xã hội hiện đại.</p>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section id="gioithieu">
+      <h2>Giới thiệu Khoa CNTT</h2>
+      <p>Khoa CNTT được thành lập với mục tiêu đào tạo kỹ sư công nghệ thông tin có trình độ chuyên môn cao, đáp ứng nhu cầu nhân lực thời đại số.</p>
+      
+      <h3>Chương trình đào tạo</h3>
+      <ul>
+        <li>Công nghệ phần mềm</li>
+        <li>Mạng máy tính</li>
+        <li>Khoa học dữ liệu</li>
+      </ul>
+
+      <h3>Thành tích nổi bật</h3>
+      <table>
+        <tr><th>Năm</th><th>Thành tích</th></tr>
+        <tr><td>2022</td><td>Đạt giải Nhì cuộc thi lập trình quốc gia</td></tr>
+        <tr><td>2023</td><td>Hợp tác đào tạo với doanh nghiệp công nghệ hàng đầu</td></tr>
+      </table>
+    </section>
+
+    <!-- TIN TỨC -->
+    <section id="tintuc" class="news">
+      <h2>Tin tức Khoa CNTT</h2>
+      <article class="tin-card">
+        <img src="assets/images/tin1.jpg" alt="Tin 1">
+        <h3>Sinh viên CNTT đạt giải Hackathon 2025</h3>
+        <p>Nhóm sinh viên khoa CNTT đạt giải Nhất cuộc thi lập trình toàn quốc Hackathon 2025...</p>
+      </article>
+
+      <article class="tin-card">
+        <img src="assets/images/tin2.jpg" alt="Tin 2">
+        <h3>Khai giảng khóa học Khoa học dữ liệu</h3>
+        <p>Khoa CNTT mở khóa học Khoa học dữ liệu cho sinh viên đam mê trí tuệ nhân tạo và dữ liệu lớn.</p>
+      </article>
+
+      <article class="tin-card">
+        <img src="assets/images/tin3.jpg" alt="Tin 3">
+        <h3>Hội thảo “Công nghệ mới trong kỷ nguyên số”</h3>
+        <p>Các chuyên gia chia sẻ xu hướng mới về AI, Cloud và an ninh mạng tại hội thảo khoa CNTT.</p>
+      </article>
+    </section>
+
+    <!-- LIÊN HỆ -->
+    <section id="lienhe" class="contact">
+      <h2>Liên hệ Khoa CNTT</h2>
+      <form>
+        <label>Họ và tên:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Chủ đề:</label>
+        <input type="text">
+
+        <label>Nội dung:</label>
+        <textarea rows="5"></textarea>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Khoa Công Nghệ Thông Tin - Đại học Đại Nam</p>
+  </footer>
+</body>
+</html>
 </body>
 </html>
